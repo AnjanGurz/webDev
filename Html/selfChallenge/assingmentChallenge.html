@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge Login page</title>
+
+
+    <style>
+        
+        body{
+            background-color: rgba(74, 14, 203, 0.701);
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .card{
+            background-color: #4a4a4a;
+            border-radius: 8px;
+            padding: 18px;
+            width: 350px; 
+        }
+
+        h2{
+            text-align: center;
+            color: white;
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .names{
+            padding: 7px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            width: 135px;
+
+        }
+
+        input, button{
+            padding: 12px;
+            border-radius: 8px;
+            margin-bottom: 14px;
+        }
+
+        button{
+            width: 150px;
+            background-color: rgb(137, 196, 48);
+            color: #000;
+            font-size: 16px;
+            font-weight:bolder;
+            padding: 7px 12px;
+        }
+
+        button:hover{
+            background-color:cadetblue;
+            color: white;
+
+        }
+
+        #name>input{
+            padding: 12px;
+        }
+
+
+
+
+    </style>
+
+</head>
+<body>
+    <div class="card">
+        <h2>Sign up</h2>
+
+        <form>
+            <input style="width: 300px;" type="email" name="" id="email" placeholder="Email">
+            
+            <div id="name">
+                <input type="text" name="" id="" class="names" placeholder="First name">
+                <input type="text" name="" id="" class="names"  placeholder="Last name">
+            </div>
+
+            <input type="password" name="" id="" placeholder="password">
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+
+
+</body>
+</html>
