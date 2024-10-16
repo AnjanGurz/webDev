@@ -153,12 +153,13 @@
         document.getElementById('taskList').addEventListener('click', function(e) {
             if (e.target.classList.contains('btn-danger')) {
                 if (confirm('Are you sure you want to delete this task?')) {
-                    const li = e.target.parentElement;
-                    li.remove();
-                    // Remove task from local storage
-                    const tasks = getTasks().filter(task => task !== li.textContent.trim());
-                    localStorage.setItem('tasks', JSON.stringify(tasks));
+                    const li = e.target.parentElement; // Retrieve the parent <li> element of the clicked button before removal
+                    li.remove(); // Remove the <li> element from the DOM
+                    // Access the text content of the <li> using li.textContent before it's removed even it is getting removed the above li variable has the textcontent access of the li
+                    const tasks = getTasks().filter(task => task !== li.textContent.trim()); // Filter out the task to be deleted from the stored tasks and stored the final array with filtred data into array called tasks.
+                    localStorage.setItem('tasks', JSON.stringify(tasks)); // Update local storage with the new list of tasks
                 }
+
             }
         });
 
