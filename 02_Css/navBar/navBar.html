@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar variations</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin:0;
+            background: #000;
+            color: white;
+        }
+
+        .nav-container{
+            margin-bottom: 40px;
+        }
+
+        h2{
+            margin-bottom: 10px;
+        }
+
+        .nav1{
+            background: #fff;
+            padding: 1px 0px;
+        }
+        .nav1 ul{
+            list-style-type: none;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .nav1 a{
+            text-decoration: none; /* removing underline from link */
+            color: #202020;
+            /* background-color: #d45b04; */
+            padding: 5px 15px;
+            font-size: 17px;
+            position: relative;
+
+        }
+
+        .nav1 li{
+            display: inline;
+
+        }
+
+        .nav1 a::after {
+            content: "aa"; /* Placeholder; can be removed */
+            position: absolute; /* Positions this element absolutely within the link */
+            height: 2px; /* Sets the height of the underline */
+            width: 100%; /* Makes the underline the same width as the link */
+            bottom: 0; /* Aligns the underline at the bottom of the link */
+            left: 0; /* Aligns the underline to the left */
+            background-color: #0a65c7; /* Sets the color of the underline */
+            transform: scaleX(0); /* Initially hides the underline */
+            transition: transform 0.3s ease-in-out; /* Adds smooth transition when the underline appears */
+        }
+
+
+        .nav1 a:hover::after{
+            transform:scaleX(1);
+        }
+        
+        .nav1 .login-btn{
+            background-color: rgb(50, 60, 245);
+            color: white;
+            border: none;
+            padding: 5px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .nav2{
+            background-color: #03643c;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="nav-container">
+        <h2>Variation 1: Horizontal with underline effect</h2>
+        <nav class="nav1">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Products</a></li>
+                <li><button class="login-btn">Login</button></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="nav-container">
+        <h2>Variation 2: Vertical with hover Effect</h2>
+        <nav class="nav2">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Products</a></li>
+                <li><button class="login-btn">Login</button></li>
+            </ul>
+        </nav>
+    </div>
+
+</body>
+</html>
