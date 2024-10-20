@@ -1,3 +1,211 @@
+/* to pick a color or steal a color from other website we can use colorZilla chrome extension. */
 *{
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;;
 }
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+main{
+    width: 100%;
+    background:#D5FF3F;
+    padding: 20px;
+}
+
+nav{
+    height: 80px;
+    width: 100%;
+    padding: 60px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .part2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 95px;
+}
+
+nav .part2 a{
+    text-decoration: none;
+}
+
+nav h2{
+    font-size: 30px;
+    font-weight:500;
+}
+
+nav a{
+    font-size: 20px;
+    font-weight: 620;
+    color: #000;
+}
+
+
+section {
+    /* margin-top: 50px;
+    display: flex;
+    align-items: flex-start; */
+    padding: 120px 100px;
+
+}
+
+section .hero-text1{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;    
+}
+
+.hero-text1 h1{
+    font-size: 120px;
+    text-transform:uppercase;
+    font-weight: 700;
+    line-height: 160px;
+   
+}
+
+.hero-text1 .video{
+    height: 90px;
+    width: 370px;
+    background-color: #000;
+    border-radius: 100px;
+    margin-top: 18px;
+    margin-right: 50px;
+    background-image: url(https://images.unsplash.com/photo-1728343070484-0874149980d9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxNTN8fHxlbnwwfHx8fHw%3D);
+    background-size: cover;
+    padding: 10px;
+}
+
+.video .play{
+    height: 100%;
+    width:75px;
+    border-radius: 100px;
+    background-color: #000;
+    border: 2px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.play i{
+    color: #D5FF3F;
+    font-size: 30px;
+}
+
+section .hero-text2{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    
+}
+
+.hero-text2 h1{
+    font-size: 120px;
+    text-transform:uppercase;
+    font-weight: 700;
+    line-height: 140px;
+    
+}
+
+.hero-text2 p{
+    font-size: 18px;
+    width: 550px;
+    font-weight:400;
+    margin-bottom: 20px;
+    margin-right: 60px;
+}
+
+.image{
+    height: 500px;
+    width: 80%;
+    margin-left: 10%;
+    background: #0c7094;
+    border-top-left-radius: 250px;
+    border-top-right-radius: 250px;
+    margin-top: 90px;
+    background-image: url(https://images.unsplash.com/photo-1542272201-b1ca555f8505?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHdpZGUlMjB3YWxscGFwZXIlMjBoZWlnaHQlMjBsb25nfGVufDB8fDB8fHww);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.image .arrow{
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    background: #000;
+    position: absolute;
+    right: 20%;
+    top: -10%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 10px dashed #D5FF3F;
+    animation: rotateArrow 6s linear infinite;
+}
+
+.arrow i{
+    font-size: 95px;
+    transition: 0.3s ease-in-out;
+    position:sticky;
+}
+
+
+.arrow i:hover{
+    font-size: 75px;
+}
+
+@keyframes rotateArrow {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+.middle{
+    display: flex;
+    justify-content: space-around;
+}
+
+.middle .bAgency{
+    height: 50px;
+    width: 230px;
+    border: 0.5px solid #000;
+    border-radius: 40px;
+    padding: 0px 12px;
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.middle .wAgency{
+    width: 230px;
+    border: 0.5px solid #000;
+    border-radius: 40px;
+    padding: 0px 6px;
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.middle i{
+    font-size: 40px;
+    font-weight: 100;
+
+}
+
