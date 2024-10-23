@@ -1,0 +1,91 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Poppins&display=swap');
+
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans", sans-serif;
+  font-family: "Comic Neue", cursive;
+  font-weight: 400;
+  font-style: normal;
+  height: 100%;
+}
+
+.container {
+/*   
+A linear gradient is a way to create a smooth transition between two or more colors along a straight line. This effect can be applied as a background to elements, offering a visually appealing style instead of a solid color.
+
+  Linear Gradient Background:  
+  - Creates a smooth transition between colors.  
+  - Direction can be set in degrees (e.g., 0deg, 90deg, 135deg) or keywords (e.g., to right, to bottom).  
+  - Can include multiple colors with optional percentages for color stops.  
+  - Example: linear-gradient(135deg, #8a2be2, #4169e1) creates a diagonal gradient from blue-violet to blue.  
+  - Useful for backgrounds, buttons, and overlays to add depth and visual appeal.  
+*/
+  background: linear-gradient(135deg, #8a2be2, #4169e1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.logo{
+    height: 100px;
+    width: 110px;
+    object-fit: cover;
+    border-top-left-radius:12px;
+    border-bottom-right-radius:12px;
+}
+
+
+.content{
+    text-align: center;
+    background-color:white;
+    padding: 2rem;
+    border-radius: 12px;
+    max-width: 400px; /* max-with*/
+}
+
+h1{
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+input[type='email']{
+    padding: 0.4rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 1rem;
+}
+
+button{
+    padding: 0.4rem;
+    background-color:#8a2be2;
+    color: #fff;
+    border:none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    transition: background-color 0.6s ease-in-out, width 1.5s ease-in-out;
+    width:8rem;
+    margin: 0 auto;
+    box-shadow: 6px 6px 9px #272626;
+}
+
+button:hover{
+    /* background-color: #333; */
+    width: 23rem;
+}
+
+#Waves{
+    position: absolute;
+    background: linear-gradient(135deg, #4169e1, #8a2be2);
+
+}
+

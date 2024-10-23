@@ -24,6 +24,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
 }
 
 nav .part2{
@@ -43,9 +44,22 @@ nav h2{
 }
 
 nav a{
-    font-size: 20px;
-    font-weight: 620;
+    font-size: 18px;
+    font-weight: 650;
+    height: 110px;
+    width: 120px;
     color: #000;
+    padding: 12px;
+    padding-top: 35px;
+    padding-left: 18px;
+    
+}
+
+nav a:hover{
+    background: #000;
+    border-radius:50px;
+    transition: 0.5s ease-in-out;
+    color: #D5FF3F;
 }
 
 
@@ -78,7 +92,7 @@ section .hero-text1{
     border-radius: 100px;
     margin-top: 18px;
     margin-right: 50px;
-    background-image: url(https://images.unsplash.com/photo-1728343070484-0874149980d9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxNTN8fHxlbnwwfHx8fHw%3D);
+    background-image: url(https://plus.unsplash.com/premium_photo-1685086785223-485f800ce410?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODV8fHByb2dyYW1taW5nfGVufDB8fDB8fHww);
     background-size: cover;
     padding: 10px;
 }
@@ -187,8 +201,9 @@ section .hero-text2{
     font-size: 16px;
     font-weight: 700;
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    justify-content: center;
+    gap: 26px;
 }
 
 .middle .wAgency{
@@ -199,8 +214,9 @@ section .hero-text2{
     font-size: 16px;
     font-weight: 700;
     display: flex;
-    justify-content: space-around;
+    gap: 36px;
     align-items: center;
+    justify-content: center;
 }
 
 .middle i{
@@ -208,4 +224,5 @@ section .hero-text2{
     font-weight: 100;
 
 }
+
 
