@@ -54,7 +54,8 @@ max-width: 26rem; → The button is still at 12rem since it's already at its max
 - Key Takeaway:
 If you want the button to increase its width on hover, you should use the width property rather than max-width. Setting a base width and then changing that on hover allows the button to grow to the new specified width rather than trying to redefine its maximum.
 ```css  
-max-width: value; /* Accepts various units like px, %, em, rem, etc. */ ```
+max-width: value; /* Accepts various units like px, %, em, rem, etc. */
+```
 
 # Box Shadow in CSS  
 
@@ -63,7 +64,8 @@ max-width: value; /* Accepts various units like px, %, em, rem, etc. */ ```
 The syntax for `box-shadow` is as follows:  
 
 ```css  
-box-shadow: h-offset v-offset blur-radius spread-radius color;```
+box-shadow: h-offset v-offset blur-radius spread-radius color;
+```
 
 # Box Shadow Properties  
 
